@@ -1,6 +1,6 @@
 <template>
-<div class="font-extrabold hover:text-hot-pink text-3xl animation-logo tracking-tighter text-indigo-700">
-  {{ $config.name[0].toLowerCase() }}
+<div class="font-extrabold hover:text-hot-pink text-3xl tracking-tighter text-indigo-700">
+  <img id="main-logo" src="/images/brain.svg" alt="">
 </div>
 </template>
 
@@ -10,6 +10,11 @@ export default {
 </script>
 
 <style scoped>
+#main-logo {
+
+  width: 65px;
+}
+
 .animation-logo {
   animation: bounce 1s infinite;
 }
