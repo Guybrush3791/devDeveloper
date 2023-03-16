@@ -97,7 +97,7 @@ export default {
       hero: {
         friendlyNeighborhood: 'Il nerd di fiducia',
         words: ['programmer', 'teacher', 'engineer', 'problem solver'],
-        description: 'Sono un programmatore back-end, freelance per natura e semmpre alla ricerca di nuovi progetti stimolanti. Ho insegnato a migliaia di ragazzi ad amare il mondo della programmazione.',
+        description: 'Programmatore back-end, freelance per natura e semmpre alla ricerca di nuovi progetti stimolanti. Formati migliaia di ragazzi ad amare il mondo della programmazione.',
       }
     },
     en_US: {
