@@ -2,7 +2,7 @@
 
 export default {
   name: 'K8',
-  domain: 'template.karngyan.com', // add without https:// , used in meta tags and share urls
+  domain: 'devdeveloper.it', // add without https:// , used in meta tags and share urls
   image: '/images/k8langs.png',
   email: 'mail@karngyan.com',
   googleAnalyticsV4: {
@@ -11,7 +11,7 @@ export default {
   },
   plausibleAnalytics: {
     enabled: false,
-    domain: 'template.karngyan.com',
+    domain: 'devdeveloper.it',
     trackLocalhost: false,
     // leave it empty if plausible is not self hosted
     apiHost: 'https://analytics.lookatx.dev' // default: https://plausible.io
@@ -34,17 +34,17 @@ export default {
     url: 'https://www.buymeacoffee.com/karngyan'
   },
   projects: {
-    enabled: false,
+    enabled: true,
   },
   blog: {
     enabled: false,
   },
   resume: {
-    enabled: false,
-    pdfUrl: '/RESUME_GYAN_KARN_DARK.pdf' // add files in static folder
+    enabled: true,
+    pdfUrl: '/Giovanni Cappelletti - CV - 2021.07.22.pdf' // add files in static folder
   },
   uses: {
-    enabled: false,
+    enabled: true,
     meta: [
       {title: 'OS', value: 'macOS Catalina'},
       {title: 'Memory', value: '16 GB 2667 MHz DDR4'},
@@ -93,12 +93,26 @@ export default {
     it_IT: {
       nav: {
         home: 'home',
+        blog: 'blog',
+        projects: 'progetti',
+        uses: 'statistiche',
+        resume: 'CV',
+        signIn: 'sign in',
+        signOut: 'sign out'
       },
       hero: {
         friendlyNeighborhood: 'Il nerd di fiducia',
         words: ['programmer', 'teacher', 'engineer', 'problem solver'],
         description: 'Programmatore back-end, freelance per natura e semmpre alla ricerca di nuovi progetti stimolanti. Formati migliaia di ragazzi ad amare il mondo della programmazione.',
-      }
+      },
+      projects: {
+        header: 'Progetti',
+        subtext: 'alcuni tra i progetti attivi piu\' interessanti. Clicca per saperne di piu\'',
+      },
+      uses: {
+        header: 'statistiche',
+        subtext: 'una lista di metriche e statistiche'
+      },
     },
     en_US: {
       download: 'download',
