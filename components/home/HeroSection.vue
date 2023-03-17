@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gray-800 overflow-hidden">
+  <div class="relative bg-gray-800">
     <div class="relative">
       <main class="">
         <div class="mx-auto py-8 max-w-7xl border-l border-r border-dashed border-gray-700">
@@ -35,7 +35,7 @@
               </div>
             </div>
             <div class="mt-8 px-5 sm:mt-16 lg:mt-0 lg:col-span-6">
-              <div class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg sm:overflow-hidden">
+              <div class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg">
                 <img class="rounded-md h-80" :src="$config.image" :alt="$config.name">
               </div>
             </div>
