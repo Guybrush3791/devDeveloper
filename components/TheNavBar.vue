@@ -1,5 +1,5 @@
 <template>
-<nav class="backdrop-filter backdrop-blur sticky top-0 z-50 w-full">
+<nav class="backdrop-filter backdrop-blur sticky top-0 z-40 w-full z-over">
   <div class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-2 sm:px-4 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0">
@@ -128,6 +128,12 @@ export default {
 </script>
 
 <style scoped>
+
+.z-over {
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
 .backdrop-filter {
   backdrop-filter: blur(15px);
 }
