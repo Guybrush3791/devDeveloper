@@ -1,5 +1,5 @@
 <template>
-<nav class="backdrop-filter backdrop-blur sticky top-0 z-40 w-full z-over">
+<nav class="backdrop-filter backdrop-blur sticky top-0 z-40 w-full">
   <div class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-2 sm:px-4 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0">
@@ -128,11 +128,10 @@ export default {
 </script>
 
 <style scoped>
-
-.z-over {
-
-  -webkit-transform: translate3d(0, 0, 40px);
-  transform: translate3d(0, 0, 40px);
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 40 !important;
 }
 .backdrop-filter {
   backdrop-filter: blur(15px);
