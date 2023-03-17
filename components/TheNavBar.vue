@@ -128,12 +128,6 @@ export default {
 </script>
 
 <style scoped>
-.sticky {
-    position: sticky;
-    position: -webkit-sticky;
-
-    display: block;
-}
 .backdrop-filter {
   backdrop-filter: blur(15px);
 }
