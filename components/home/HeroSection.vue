@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gray-800">
+  <div class="relative bg-gray-800 overflow-hidden test">
     <div class="relative">
       <main class="">
         <div class="mx-auto py-8 max-w-7xl border-l border-r border-dashed border-gray-700">
@@ -35,7 +35,7 @@
               </div>
             </div>
             <div class="mt-8 px-5 sm:mt-16 lg:mt-0 lg:col-span-6">
-              <div class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg">
+              <div class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg sm:overflow-hidden">
                 <img class="rounded-md h-80" :src="$config.image" :alt="$config.name">
               </div>
             </div>
@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+.test {
+    transform: translate3d(0,0,0);
+}
 >>> .vue-typer .custom.char {
   @apply text-indigo-600;
 }
