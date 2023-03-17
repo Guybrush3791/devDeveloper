@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="flex lg:hidden">
-        <div class="mr-2 flex items-center md:hidden">
+        <div class="mr-2 flex items-center lg:hidden">
           <button @click="mobileMenuOpen = true" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
           <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -26,7 +26,7 @@
           </button>
         </div>
       </div>
-      <div class="hidden md:flex flex-row space-x-2 items-center justify-center">
+      <div class="hidden lg:flex flex-row space-x-2 items-center justify-center">
         <div v-if="$config.laguageSwitcher.enabled">
           <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)" class="text-gray-300 hover:text-white" >{{ locale.name }}</nuxt-link>
         </div>
@@ -53,7 +53,7 @@
   >
     <div
       v-show="mobileMenuOpen"
-      class=" absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      class=" absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden">
       <div class="rounded-lg bg-gray-800">
         <div class="bg-gray-900 rounded-lg overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
           <div class="px-5 pt-4 flex items-center justify-between">
