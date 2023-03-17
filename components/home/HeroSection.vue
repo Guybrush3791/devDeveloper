@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .test {
-    transform: translate3d(0,0,0);
+    transform: translateZ(0);;
 }
 >>> .vue-typer .custom.char {
   @apply text-indigo-600;
