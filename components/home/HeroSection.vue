@@ -59,9 +59,6 @@ export default {
 </script>
 
 <style scoped>
-.test {
-    transform: translateZ(0);;
-}
 >>> .vue-typer .custom.char {
   @apply text-indigo-600;
 }

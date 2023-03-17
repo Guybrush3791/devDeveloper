@@ -131,10 +131,8 @@ export default {
 .sticky {
     position: sticky;
     position: -webkit-sticky;
+
     display: block;
-    
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
 }
 .backdrop-filter {
   backdrop-filter: blur(15px);
