@@ -131,8 +131,8 @@ export default {
 
 .z-over {
 
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 40px);
+  transform: translate3d(0, 0, 40px);
 }
 .backdrop-filter {
   backdrop-filter: blur(15px);
