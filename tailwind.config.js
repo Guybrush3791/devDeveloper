@@ -85,10 +85,15 @@ module.exports = {
       fill: ['hover', 'focus'],
     },
   },
+  content: [
+    'node_modules/preline/dist/*.js',
+  ],
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
     require("@tailwindcss/typography"),
-    require('@tailwindcss/line-clamp')
+    require('@tailwindcss/line-clamp'),
+    
+    require('preline/plugin'),
   ],
 }

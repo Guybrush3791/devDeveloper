@@ -97,7 +97,8 @@ export default {
         projects: 'progetti',
         uses: 'statistiche',
         resume: 'CV',
-        signIn: 'sign in',
+        login: 'login',
+        signUp: 'sign up',
         signOut: 'sign out'
       },
       hero: {

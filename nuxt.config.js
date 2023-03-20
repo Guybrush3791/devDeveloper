@@ -174,7 +174,23 @@ const nuxtConfig = {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    proxy: true,
+    debug: false,
+    retry: { retries: 3 },
+    headers: {
+      common: {
+        'Accept': 'application/json, text/plain'
+      }
+    }
+  },
+  proxy: {
+    '/api': {
+        target: 'http://localhost:8080',
+        pathRewrite: {'^/api': '/api/v1'},
+        changeOrigin: true // accept cross origin  
+    },
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {

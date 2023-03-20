@@ -37,11 +37,13 @@ export default {
     techs() {
       let techs = []
       this.projects.forEach((project) => {
-        project.tech.split(' ').forEach((tech) => {
-          if (tech.trim() !== "") {
-            techs.push(tech.trim())
-          }
-        })
+
+        if (project.tech && project.tech.includes(' '))
+          project.tech.split(' ').forEach((tech) => {
+            if (tech.trim() !== "") {
+              techs.push(tech.trim())
+            }
+          })
       })
       return [ALL, ...new Set(techs)]
     },
@@ -57,17 +59,31 @@ export default {
       ALL: ALL, // exporting it to template
     }
   },
-  async asyncData({ $content }) {
-    const fetchDocsLabel = 'fetchAllProjects'
-    console.time(fetchDocsLabel)
-    const projects = await $content('projects')
-      .without(['body', 'toc'])
-      .sortBy('id', 'asc')
-      .fetch()
-    console.timeEnd(fetchDocsLabel)
-    return {
-      projects
-    }
+  // async asyncData({ $content }) {
+    async asyncData({ $content, $axios }) {
+    
+    // const fetchDocsLabel = 'fetchAllProjects'
+    // console.time(fetchDocsLabel)
+    // const projects = await $content('projects')
+    //   .without(['body', 'toc'])
+    //   .sortBy('id', 'asc')
+    //   .fetch()
+    // console.timeEnd(fetchDocsLabel)
+
+    // console.log("projects: " + JSON.stringify(projects));
+
+    
+
+    const apiRes = await $axios.get('/api/open/content/projects');
+    const projects = apiRes.data;
+
+    console.log("db projects: " + JSON.stringify(projects));
+
+    return { projects };
+
+    // return {
+    //   projects
+    // }
   }
 }
 </script>
